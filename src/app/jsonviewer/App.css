@@ -1,0 +1,140 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .editor-container {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .input-section, .output-section {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    font-family: monospace;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .output-container {
+    background-color: rgba(17, 17, 17, 0.2);
+    padding: 1rem;
+    border-radius: 4px;
+    min-height: 300px;
+    overflow-x: auto;
+  }
+  
+  .json-viewer {
+    font-family: monospace;
+    white-space: pre-wrap;
+    text-align: left;
+  }
+  
+  .key {
+    color: #9cdcfe;
+  }
+  
+  .string {
+    color: #ce9178;
+  }
+  
+  .number {
+    color: #b5cea8;
+  }
+  
+  .boolean {
+    color: #569cd6;
+  }
+  
+  .null {
+    color: #569cd6;
+  }
+  
+  .error {
+    color: #f44336;
+    margin-top: 0.5rem;
+  }
+  
+  .object-item, .array-item {
+    margin-left: 1rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .copy-button {
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+  }
+  
+  .copy-button:hover {
+    background-color: #5a5a5a;
+  }
+  
+  .copy-button:active {
+    background-color: #3a3a3a;
+  }
+  
+  .copy-feedback {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    animation: fadeOut 2s forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @media (max-width: 768px) {
+    .editor-container {
+      flex-direction: column;
+    }
+    
+    .input-section, .output-section {
+      width: 100%;
+    }
+  }
