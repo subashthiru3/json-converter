@@ -115,7 +115,7 @@ function JsonViewer({ data }) {
                 onClick={handleCopyFormatted}
                 disabled={!parsedJson}
               >
-                Copy Formatted
+                Copy Formatted JSON
               </button>
             </div>
             <div className="output-container">
