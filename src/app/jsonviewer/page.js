@@ -53,8 +53,8 @@ function JsonViewer({ data }) {
   }
   
   function App() {
-    const [jsonInput, setJsonInput] = useState({});
-    const [parsedJson, setParsedJson] = useState(null);
+    const [jsonInput, setJsonInput] = useState('{}');
+    const [parsedJson, setParsedJson] = useState({});
     const [error, setError] = useState(null);
     const [showCopyFeedback, setShowCopyFeedback] = useState(false);
   
